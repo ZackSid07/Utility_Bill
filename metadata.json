@@ -1,0 +1,5 @@
+{
+  "name": "Utility Bill Calculator",
+  "description": "A web application for calculating utility bills based on a configurable flat-rate rule. It features separate interfaces for administrators to set pricing and for users to calculate their bills.",
+  "requestFramePermissions": []
+}

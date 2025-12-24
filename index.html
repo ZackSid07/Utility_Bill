@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utility Bill Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.89.0",
+    "react-markdown": "https://esm.sh/react-markdown@9.0.1",
+    "remark-gfm": "https://esm.sh/remark-gfm@4.0.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+  }
+}
+</script>
+<style>
+.prose-invert h1, .prose-invert h2, .prose-invert h3, .prose-invert h4, .prose-invert h5, .prose-invert h6 {
+  color: #fff;
+}
+.prose-invert p, .prose-invert ul, .prose-invert ol, .prose-invert li {
+  color: #d1d5db;
+}
+.prose-invert a {
+  color: #818cf8;
+}
+.prose-invert a:hover {
+  text-decoration: underline;
+}
+.prose-invert strong {
+  color: #fff;
+}
+.prose-invert blockquote {
+  color: #9ca3af;
+  border-left-color: #4b5563;
+}
+.prose-invert code {
+  color: #f3f4f6;
+  background-color: #374151;
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  border-radius: 6px;
+}
+.prose-invert pre {
+    background-color: #1f2937;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+}
+.prose-invert pre code {
+    background-color: transparent;
+    padding: 0;
+}
+</style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-900 text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
