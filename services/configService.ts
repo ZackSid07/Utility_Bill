@@ -1,6 +1,6 @@
 import type { BillConfiguration } from '../types';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || '';
+const API_BASE_URL = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '');
 
 const DEFAULT_CONFIG: BillConfiguration = {
   ratePerUnit: 0.15,
